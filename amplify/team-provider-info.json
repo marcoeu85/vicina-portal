@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vicina-dev-ef05f-authRole",
+      "UnauthRoleArn": "arn:aws:iam::045721736813:role/amplify-vicina-dev-ef05f-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::045721736813:role/amplify-vicina-dev-ef05f-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-vicina-dev-ef05f-deployment",
+      "UnauthRoleName": "amplify-vicina-dev-ef05f-unauthRole",
+      "StackName": "amplify-vicina-dev-ef05f",
+      "StackId": "arn:aws:cloudformation:eu-central-1:045721736813:stack/amplify-vicina-dev-ef05f/6c530750-c61c-11f0-bc45-0aa13ecc4175",
+      "AmplifyAppId": "d3fbvarhrv7m3s"
+    }
+  }
+}
