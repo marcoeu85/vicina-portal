@@ -1,0 +1,23 @@
+type Response @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  timestamp: AWSDateTime
+  responseType: String
+  callID: String
+  Seniors: [Senior] @manyToMany(relationName: "ResponseSenior")
+}
+
+type Senior @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  callPhone: String
+  lastCallDate: AWSDateTime
+  Senior1ToCaregiver1: Caregiver @hasOne
+  responses: [Response] @manyToMany(relationName: "ResponseSenior")
+}
+
+type Caregiver @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  email: String
+  notificationPhone: String
+}
